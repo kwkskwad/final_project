@@ -15,7 +15,6 @@ class MyApp < Sinatra::Base
 
 	post '/results' do
     @genre = params[:musicoption].upcase
-    p @genre
     @results= get_data_from_soundcloud(@genre)
     @sound_cloud_link = @results.gsub(":", "%3A")
 		erb :results
@@ -24,9 +23,4 @@ class MyApp < Sinatra::Base
   get '/about' do
     erb :about
   end
-
-
-
-
-
 end

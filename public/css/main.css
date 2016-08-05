@@ -449,7 +449,7 @@
 		-ms-animation: overlay 1.5s 1.5s forwards;
 		animation: overlay 1.5s 1.5s forwards;
 		background-attachment: fixed, fixed;
-		background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
+/* 		background-image: url("images/overlay-pattern.png"), url("images/overlay.svg"); */
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
@@ -818,13 +818,20 @@
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		bottom: 0;
 		cursor: default;
-		height: 6em;
+		height: 4.5em;
 		left: 0;
 		line-height: 8em;
 		position: absolute;
 		text-align: center;
 		width: 100%;
+    vertical-align: top !important;
+/*     max-height: 60px; */
 	}
+
+#footer span {
+  vertical-align: top !important;
+  padding-top:-10% !important;
+}
 
 /* Wide */
 
