@@ -1,11 +1,9 @@
 
 
-##Interactive Practice: Model-View-Controller
+##Kode With Klossy, Los Angeles: Skwad
 
-Fork and clone this repository and follow along in lecture!
+This is our final project that resulted from the two-week camp. We have utilized Ruby, HTML, and CSS to create a website that allows users to discover new music by genre.
 
-(WIP)
+Enjoy!
 
 
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/hs-mvc-interactive-practice' title='Interactive Practice: Model-View-Controller'>Interactive Practice: Model-View-Controller</a> on Learn.co and start learning to code for free.</p>
