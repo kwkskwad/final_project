@@ -30,7 +30,7 @@ def get_data_from_soundcloud(genre)
 #song is randomly selected from api
   track = @client.get('/tracks', :genre => @genre_hash[genre.to_sym]).sample
   track["uri"]
-  request_string="https://api.soundcloud.com/tracks?genres=#{genre}&client_id=1b710209af9f461e92b38e3492033252"
+  request_string="https://api.soundcloud.com/tracks?genre=#{genre}&client_id=1b710209af9f461e92b38e3492033252"
 	sample_uri = URI(request_string) #opens a portal to the data at that link
 	sample_response = Net::HTTP.get(sample_uri) #go grab the data in the portal
 	sample_parsedResponse = JSON.parse(sample_response) #makes data easy to read
