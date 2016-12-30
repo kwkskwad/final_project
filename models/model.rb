@@ -37,7 +37,6 @@ def get_data_from_soundcloud(genre)
   sample_parsedResponse.sample["uri"]
 end
 #song plays for 10 seconds
-
 #when song is over, => reveal or next
 #if reveal, show song name
 #if next, go to next song
