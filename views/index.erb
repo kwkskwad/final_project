@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head>
+	<head>
 		<title>Music Discovery</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 <!--     # link your css file to your html file so that your css shows up on your html page -->
-	<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/main.css" />
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
   </head>
@@ -16,40 +16,43 @@
 		<div id="wrapper">
 			<div id="bg"></div>
 			<div id="overlay"></div>
-		    <div id="main">
+			<div id="main">
 				<!-- Header -->
-			<header id="header">
-				<h1>Music Discovery</h1>
-                    <p class="title">Your place to discover new music</p>
-            </header>
-            <nav>
+					<header id="header">
+						<h1>Music Discovery</h1>
+            <p class="title">Your place to discover new music</p>
+						<nav>
+              <div class="box input-field col s12">
+                <br>
                 <a id="home1" href="/about">About</a>
-            </nav>
-            <div class="box input-field col s12">
-             <form method="POST" action="/results">
-                 <p>Alternative Rock<input style="color: blue;" type="radio" value="altrock" name="musicoption"></p>
-                 <p>Classical<input style="color: blue;" type="radio" value="classical" name="musicoption"></p>
-                 <p>Country<input style="color: blue;" type="radio" value="country" name="musicoption"></p>
-                 <p>Electronic<input style="color: blue;" type="radio" value="electronic" name="musicoption"></p>
-                 <p>Foreign<input style="color: blue;" type="radio" value="foreign" name="musicoption"></p>
-                 <p>Hip-hop & Rap<input style="color: blue;" type="radio" value="rap" name="musicoption"></p>
-                 <p>Jazz<input style="color: blue;" type="radio" value="jazz" name="musicoption"></p>
-                 <p>Pop<input style="color: blue;" type="radio" value="pop" name="musicoption"></p>
-                 <button style="color: navy;" type="submit">Submit</button>
-              </form>
-            </div>
+                <form method="POST" action="/results">
+                   <p>Alternative Rock<input style="color: blue;" type="radio" value="altrock" name="musicoption"></p>
+                   <p>Classical<input style="color: blue;" type="radio" value="classical" name="musicoption"></p>
+                   <p>Country<input style="color: blue;" type="radio" value="country" name="musicoption"></p>
+                   <p>Electronic<input style="color: blue;" type="radio" value="electronic" name="musicoption"></p>
+                   <p>Foreign<input style="color: blue;" type="radio" value="foreign" name="musicoption"></p>
+                   <p>Hip-Hop & Rap<input style="color: blue;" type="radio" value="rap" name="musicoption"></p>
+                   <p>Jazz<input style="color: blue;" type="radio" value="jazz" name="musicoption"></p>
+                   <p>Pop<input style="color: blue;" type="radio" value="pop" name="musicoption"></p>
+                   <button style="color: navy;" type="submit">Submit</button>
+                  <br>
+                  <br>
+                </form>
+              </div>
+						</nav>
+					</header>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<span class="copyright">&copy; Skwad from Kode With Klossy Los Angeles</span>
-			</footer>
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Skwad from Kode With Klossy Los Angeles</span>
+					</footer>
 
-		  </div>
+			</div>
 		</div>
 		<script>
-			window.onload = function() { document.body.className = ''; };
-			window.ontouchmove = function() { return false; };
-			window.onorientationchange = function() { document.body.scrollTop = 0; };
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
 	</body>
 </html>
